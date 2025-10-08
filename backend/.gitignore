@@ -1,0 +1,11 @@
+# Node modules (backend and frontend)
+backend/node_modules/
+
+
+
+# Logs
+*.log
+
+# OS & editor files
+.DS_Store
+.vscode/

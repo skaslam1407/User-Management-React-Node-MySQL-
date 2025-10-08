@@ -1,0 +1,110 @@
+🧱 Project Overview :
+
+#simple User Management app:
+
+1. Frontend: React
+
+2. Backend: Node.js + Express
+
+3. Database: MySQL
+
+Operations:
+
+1. Create User
+
+2. Read Users
+
+3. Update User
+
+4. Delete User
+
+🗃️ Step 1: Set up MySQL Database
+
+CREATE DATABASE react_node_crud;
+
+USE react_node_crud;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  age INT
+);
+
+🧩 Step 2: Backend — Node.js + Express + MySQL
+
+📁 Folder: backend/
+1️⃣ Initialize Project
+
+mkdir backend && cd backend
+npm init -y
+npm install express mysql cors body-parser
+
+2️⃣ Create server.js
+
+⚛️ Step 3: Frontend — React App
+
+📁 Folder: frontend/
+1️⃣ Create React App
+
+npx create-react-app frontend
+cd frontend
+npm install axios
+
+2️⃣ Create src/App.js
+
+🚀 Step 4: Run the Project
+
+Start backend:
+
+cd backend
+node server.js
+
+Start frontend:
+
+cd frontend
+npm start
+
+Visit 👉 http://localhost:3000
+
+You’ll have a full working CRUD UI for managing users!
+
+🧠 Summary
+Layer	Tech	Purpose
+Database	MySQL	Store data
+Backend	Node.js + Express	Provide REST API endpoints
+Frontend	React	UI for CRUD actions
+
+
+1️⃣ Backend (Node.js) .env Setup
+
+Step 1: Install dotenv
+
+In your backend folder:
+
+npm install dotenv
+
+Step 2: Create .env file
+
+In the backend root folder, create a file named .env:
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=react_node_crud
+PORT=5000
+
+
+⚠️ Keep .env file in root, do not push it to GitHub. Add it to .gitignore.
+
+Step 3: Load .env in server.js
+
+
+
+
+2️⃣ Frontend (React) .env Setup
+
+React also supports .env files, but environment variables must start with REACT_APP_.
+
+Step 1: Create .env in React root
+REACT_APP_API_URL=http://localhost:5000

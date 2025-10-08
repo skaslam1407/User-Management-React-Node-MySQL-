@@ -1,0 +1,14 @@
+
+# Node modules (backend + frontend)
+
+frontend/node_modules/
+
+# React build output
+frontend/build/
+
+# Logs
+*.log
+
+# OS & editor files
+.DS_Store
+.vscode/
